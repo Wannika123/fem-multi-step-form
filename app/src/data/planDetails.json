@@ -1,0 +1,23 @@
+[
+    {
+        "plan": "Arcade",
+        "price": {
+            "monthly": 9,
+            "yearly": 90
+        }
+    },
+    {
+        "plan": "Advanced",
+        "price": {
+            "monthly": 12,
+            "yearly": 120
+        }
+    },
+    {
+        "plan": "Pro",
+        "price": {
+            "monthly": 15,
+            "yearly": 150
+        }
+    }
+]

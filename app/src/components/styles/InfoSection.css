@@ -1,0 +1,57 @@
+.info-label-input-container {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.info-label {
+    font-size: 0.75rem;
+    color: var(--denim);
+}
+
+.info-input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-top: 3px;
+    font-size: 0.9375rem;
+    color: var(--denim);
+    border: 1px solid var(--light-grey);
+}
+
+input::placeholder {
+    color: var(--grey);
+}
+
+input:focus {
+    outline-color: var(--purple);
+}
+
+.invalid {
+    border-color: var(--red-errors);
+}
+
+.err-message {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--red-errors);
+    font-size: 0.75rem;
+    font-family: "Ubuntu-Bold";
+}
+
+@media (min-width: 1000px) {
+    .info-label-input-container {
+        margin-bottom: 24px;
+    }
+    .info-label {
+        font-size: 0.875rem;
+    }
+    .info-input {
+        border-radius: 8px;
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+    .err-message {
+        font-size: 0.875rem;
+    }
+}

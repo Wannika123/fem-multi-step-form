@@ -1,0 +1,138 @@
+input[type=radio] {
+    opacity: 0;
+}
+
+.plan-section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+}
+
+.toggle-btns-container {   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 24px;
+    background-color: var(--very-light-grey);
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.toggle-btns-container label {
+    font-size: 0.875rem;
+    font-family: "Ubuntu-Medium";
+}
+
+.month-label {
+    color: var(--denim);
+}
+
+.year-label {
+    color: var(--grey);
+}
+
+.toggle-btns {
+    position: relative;
+    width: 2.375rem;
+    height: 1.25rem;
+    border-radius: 1.25rem;
+    background-color: var(--denim);
+}
+
+.toggle-btns input[type=radio] {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: -1px;
+}
+
+.ball {
+    position: absolute;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: var(--White);
+    z-index: 2;
+    top: 0.25rem;
+    transition: left 0.3s ease-in-out;
+}
+
+.monthly-btn:checked ~ .ball {
+    left: 0.25rem;
+}
+
+.yearly-btn:checked ~ .ball {
+    left: 1.375rem;
+}
+
+.plan-options-container {
+    display: grid;
+    gap: 12px;
+}
+
+.plan-option {
+    position: relative;
+}
+
+.plan-option input[type=radio] {
+    position: absolute;
+}
+
+.plan-option input[type=radio]:checked ~ label {
+    border-color: var(--purple) !important;
+    background-color: var(--very-light-grey) !important;
+}
+
+.plan-option label {
+    display: block;
+    border: 1px solid var(--light-grey);
+    border-radius: 8px;
+    padding: 1rem 16px;
+}
+
+.plan-option label:hover {
+    border-color: var(--purple);
+}
+
+.plan-option h2 {
+    color: var(--denim);
+    font-size: 1rem;
+    margin-bottom: 7px;
+}
+
+.plan-option p {
+    color: var(--grey);
+    font-size: 0.875rem;
+}
+
+.free-months {
+    color: var(--denim) !important;
+    font-size: 0.75rem !important;
+    margin-top: 3px;
+}
+
+@media (max-width: 999.99px) {
+    .plan-option label {
+        display: flex;
+        gap: 14px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .plan-section-container {
+        gap: 32px;
+    }
+    .plan-options-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 18px;
+    }
+    .plan-option label {
+        padding: 20px 16px 16px 16px;
+    }
+    .plan-option label img {
+        margin-bottom: 40px;
+    }
+    .free-months {
+        margin-top: 6px;
+    }
+}

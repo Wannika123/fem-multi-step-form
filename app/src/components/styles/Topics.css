@@ -1,0 +1,62 @@
+.Topics {
+    text-transform: uppercase;
+    background-image: url(../../assets/images/bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+    min-height: 240px;
+}
+
+.number {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu-Bold";
+}
+
+.curr-step {
+    background-color: var(--sky-blue);
+    border: none;
+    color: var(--denim);
+}
+
+@media (max-width: 999.99px) {
+    .Topics {
+        background-size: contain;
+        background-position: top center;
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+        gap: 16px;
+    }
+    .topic .text-container {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .Topics {
+        background-image: url(../../assets/images/bg-sidebar-desktop.svg);
+        background-position: unset;
+        padding: 40px 32px;
+    }
+    .topic {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+    .text-container p {
+        font-size: 0.75rem;
+        color: var(--light-blue);
+        margin-bottom: 4px;
+    }
+    .text-container h1 {
+        font-size: 0.875rem;
+        color: var(--White);
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,53 @@
+.back-btn,
+.next-btn, 
+.confirm-btn {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.next-btn, 
+.confirm-btn {
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.back-btn {
+    background-color: transparent;
+    color: grey;
+    transition: color 0.2s;
+}
+
+.back-btn:hover {
+    color: var(--denim);
+}
+
+.next-btn {
+    color: var(--White);
+    background-color: var(--denim);
+    
+}
+
+.confirm-btn {
+    color: var(--White);
+    background-color: var(--purple);
+}
+
+.next-btn:hover,
+.confirm-btn:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+@media (min-width: 1000px) {
+    .back-btn,
+    .next-btn, 
+    .confirm-btn {
+        font-size: 1rem;
+    }
+    .next-btn, 
+    .confirm-btn {
+        padding: 15px 24px;
+        border-radius: 8px;
+    }
+}

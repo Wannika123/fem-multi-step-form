@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url("/fonts/Ubuntu-Regular.woff2") format("woff2-variations");
+}
+
+@font-face {
+    font-family: "Ubuntu-Medium";
+    src: url("/fonts/Ubuntu-Medium.woff2") format("woff2-variations");
+}
+
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url("/fonts/Ubuntu-Bold.woff2") format("woff2-variations");
+}
+
+:root {
+    --denim: hsl(213, 96%, 18%);
+    --purple: hsl(243, 100%, 62%);
+    --light-blue: hsl(228, 100%, 84%);
+    --sky-blue: hsl(206, 94%, 87%);
+    --red-errors: hsl(354, 84%, 57%);
+    --grey: hsl(231, 11%, 63%);
+    --light-grey: hsl(229, 24%, 87%);     /* border color */
+    --BG: hsl(217, 100%, 97%);
+    --very-light-grey: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--BG);
+    min-height: 100vh;
+    font-family: "Ubuntu-Regular";
+}
+
+button {
+    border: none;
+    font-family: "Ubuntu-Medium";
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input:hover,
+label:hover {
+    cursor: pointer;
+}
+
+input[type=text],
+input[type=email] {
+    font-family: "Ubuntu-Medium";
+}
+
+h1 {
+    font-family: "Ubuntu-Bold";
+}
+
+h2, h3 {
+    font-family: "Ubuntu-Medium";
+}
+
+h4 {
+    font-family: "Ubuntu-Regular";
+}

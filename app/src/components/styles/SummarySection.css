@@ -1,0 +1,100 @@
+.summary-section-container {
+    font-size: 0.875rem;
+}
+
+.product-list {
+    background-color: var(--very-light-grey);
+    border-radius: 8px;
+    padding: 16px;    
+}
+
+.plan-list,
+.add-ons-list,
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-list h3 {
+    color: var(--denim);
+    margin-bottom: 3px;
+    font-size: 0.875rem;
+}
+
+.plan-list button {
+    background-color: transparent;
+    font-size: 0.875rem;
+    font-family: "Ubuntu-Regular";
+    text-decoration: underline;
+    color: var(--grey);
+}
+
+.plan-list button:hover {
+    color: var(--purple);
+    transition: color 0.1s;
+}
+
+.plan-list p {
+    font-family: "Ubuntu-Bold";
+    color: var(--denim);
+}
+
+.product-list-hr {
+    border: none;
+    border-top: 1px solid var(--grey);
+    opacity: 0.3;
+    margin-top: 12px;
+}
+
+.add-ons-list {
+    margin-top: 12px;
+}
+
+.add-ons-list h4 {
+    color: var(--grey);
+    font-size: 0.875rem;
+}
+
+.add-ons-list p {
+    color: var(--denim);
+}
+
+.summary {
+    padding: 0 16px;
+    margin-top: 24px;
+} 
+
+.summary p {
+    color: var(--grey);
+}
+
+.summary h1 {
+    font-size: 1rem;
+    color: var(--purple);
+}
+
+@media (min-width: 1000px) {
+    .product-list {
+        padding: 24px;
+    }
+    .plan-list h3,
+    .plan-list p {
+        font-size: 1rem;
+    } 
+    .plan-list h3 {
+        margin-bottom: 7px;
+    }
+    .product-list-hr {
+        margin-top: 24px;
+    }
+    .add-ons-list {
+        margin-top: 16px;
+    }
+    .summary {
+        padding: 0 24px;
+    }
+    .summary h1 {
+        font-size: 1.25rem;
+    }
+}

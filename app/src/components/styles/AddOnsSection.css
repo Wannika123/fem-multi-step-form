@@ -1,0 +1,87 @@
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--light-grey);
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.checkbox-label:has(input[type=checkbox]:checked) {
+    border-color: var(--purple) !important;
+    background-color: var(--very-light-grey) !important;
+}
+
+.checkbox-label:hover {
+    border-color: var(--purple);
+}
+
+.checkbox-container {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.custom-checkbox,
+input[type=checkbox] {
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+}
+
+.custom-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+}
+
+input[type=checkbox] {
+    opacity: 0;
+}
+
+.checkbox-container:has(input[type=checkbox]:checked) .custom-checkbox {
+    background-color: var(--purple);
+}
+
+.add-ons-text-container {
+    margin-left: 16px;
+}
+
+.add-ons-text-container h2 {
+    font-size: 0.875rem;
+    color: var(--denim);
+    margin-bottom: 0.1875rem;
+}
+
+.add-ons-text-container p {
+    font-size: 0.75rem;
+    color: var(--grey);
+}
+
+.add-ons-price {
+    margin-left: auto;
+    color: var(--purple);
+    font-size: 0.75rem;
+}
+
+@media (min-width: 1000px) {
+    .checkbox-label {
+        padding: 18px 24px;
+        margin-bottom: 16px;
+    }
+    .add-ons-text-container {
+        margin-left: 24px;
+    }   
+    .add-ons-text-container h2 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }   
+    .add-ons-text-container p {
+        font-size: 0.9375rem;
+    }
+    .add-ons-price {
+        font-size: 0.9375rem;
+    }
+}

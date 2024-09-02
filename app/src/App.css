@@ -1,0 +1,12 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media (min-width: 1000px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "topic": "your info",
+        "heading": "Personal info",
+        "subHeading": "Please provide your name, email address, and phone number."
+    },
+    {
+        "topic": "select plan",
+        "heading": "Select your plan",
+        "subHeading": "You have the option of monthly or yearly billing."
+    },
+    {
+        "topic": "add-ons",
+        "heading": "Pick add-ons",
+        "subHeading": "Add-ons help enhance your gaming experience."
+    },
+    {
+        "topic": "summary",
+        "heading": "Customizable Profile",
+        "subHeading": "Custom theme on your profile"
+    }
+]
